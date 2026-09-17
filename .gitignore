@@ -1,0 +1,13 @@
+# Material docente y contexto local
+professor/
+AGENTS.md
+.editorial/
+
+# Entorno y archivos locales
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

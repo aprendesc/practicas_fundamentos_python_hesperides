@@ -1,0 +1,14 @@
+[project]
+name = "practicas-fundamentos-python-hesperides"
+version = "0.1.0"
+description = "Prácticas de Fundamentos de Python para la Universidad de las Hespérides"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.29,<7",
+    "ipywidgets>=8.1.9",
+    "jupyterlab>=4.6.3",
+    "nbconvert>=7.16,<8",
+]
+
+[tool.uv]
+package = false
