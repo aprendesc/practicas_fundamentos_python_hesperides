@@ -1,28 +1,40 @@
 # Prácticas de Fundamentos de Python · Universidad de las Hespérides
 
-Material de clases síncronas y prácticas de Fundamentos de Python, basado en las notas de Programación I de la Universidad de las Hespérides.
+## Instalación breve
 
-## Clase disponible
+Necesitas Git y Python 3.12. Clona el repositorio y crea un entorno aislado:
 
-[Capítulo 1 · Tecnologías, representación y arquitectura del computador](workshop/clases_sincronas/capitulo_1.ipynb): sesión guiada de 90 minutos con ocho bloques, seis ejercicios, cinco exploradores interactivos y 47 minutos de trabajo del alumnado, incluyendo apertura y cierre. Se estudian señales y márgenes, interpretación de bytes, programa almacenado, localidad, ejecución de Python y precisión numérica.
-
-## Organización
-
-- `workshop/clases_sincronas/`: notebooks de las clases publicados para el alumnado, uno por clase.
-- `workshop/tareas/`: notebooks de prácticas para resolver.
-- `professor/`: espejo docente local, excluido de Git, con soluciones y guías dentro de los notebooks, además de recursos privados de preparación.
-
-## Entorno
-
-Se utiliza Python 3.12 y uv, con dependencias fijadas en `uv.lock`.
-
-```bash
-uv sync --locked
-uv run jupyter lab
+```sh
+git clone https://github.com/aprendesc/practicas_fundamentos_python_hesperides.git
+cd practicas_fundamentos_python_hesperides
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m ipykernel install --prefix .venv --name practicas_fundamentos_python_hesperides --display-name "Python (Fundamentos de Python)"
+python -m jupyter lab
 ```
 
-El entorno inicial incluye JupyterLab y soporte para notebooks y widgets. Las dependencias específicas se añadirán cuando el material las necesite.
+En Windows, activa el entorno con `.venv\Scripts\activate` en lugar de `source`.
+En JupyterLab selecciona el kernel **Python (Fundamentos de Python)** del entorno y abre un notebook de `practicas/`.
+Si ya tienes otro entorno, puedes usar un nombre de carpeta diferente en el primer comando y activarlo.
 
-Ejecuta el notebook en orden desde un kernel limpio. Las celdas pendientes muestran mensajes o espacios de respuesta sin impedir la ejecución del soporte. Los controles de las demos funcionan en el navegador y no requieren servicios externos. Si el visor no permite JavaScript, abre el notebook en JupyterLab y ejecuta sus celdas; confía únicamente en notebooks de procedencia conocida.
+## Prácticas
 
-La edición local del profesor conserva guion oral, pistas y solucionario dentro del mismo notebook. La versión del alumnado mantiene las mismas celdas públicas, sin el contenido privado. El resto del temario está pendiente de preparar.
+Las prácticas están agrupadas por capítulos en `practicas/capitulo_*/`. La numeración de práctica mantiene el recorrido recomendado de la lista siguiente, también cuando un ejercicio integra contenidos de varios capítulos.
+
+Completa el código iniciado. Los objetivos y pequeñas indicaciones están en cada enunciado; las referencias teóricas son opcionales. Ejecuta en orden desde la carpeta del notebook. No se incluyen comprobaciones automáticas: verifica los resultados de tu código. Una celda posterior puede fallar mientras un hueco siga sin completar.
+
+- [01 · Fundamentos de Python: valores, colecciones y control condicional](practicas/capitulo_00_base_python/practica_01_fundamentos_de_python_valores_colecciones_y_control_condicional.ipynb)
+- [02 · Fundamentos de Python: iteración, funciones y archivos](practicas/capitulo_00_base_python/practica_02_fundamentos_de_python_iteracion_funciones_y_archivos.ipynb)
+- [03 · Implementación de una máquina de Turing](practicas/capitulo_02/practica_03_implementacion_de_una_maquina_de_turing.ipynb)
+- [04 · Circuitos lógicos, sumadores y ALU](practicas/capitulo_02/practica_04_circuitos_logicos_sumadores_y_alu.ipynb)
+- [05 · Simulación de un computador de programa almacenado](practicas/capitulo_03/practica_05_simulacion_de_un_computador_de_programa_almacenado.ipynb)
+- [06 · Representación binaria, codificación y detección de errores](practicas/capitulo_01/practica_06_representacion_binaria_codificacion_y_deteccion_de_errores.ipynb)
+- [07 · Serialización y comunicación mediante sockets](practicas/capitulo_04/practica_07_serializacion_y_comunicacion_mediante_sockets.ipynb)
+- [08 · Concurrencia, idempotencia y replicación](practicas/capitulo_05/practica_08_concurrencia_idempotencia_y_replicacion.ipynb)
+
+Los datos de práctica están incluidos en el repositorio. El archivo `resultado_local.txt`, cuando se utiliza, se crea junto al notebook; puedes borrarlo para repetir.
+
+## Exámenes
+
+`examenes/` contiene únicamente `.gitkeep` para conservar la carpeta en Git. No hay exámenes publicados. Aquí aparecerán los exámenes práctico y teórico cuando se pongan a disposición.

@@ -1,13 +1,21 @@
-# Material docente y contexto local
-professor/
-AGENTS.md
-.editorial/
-
-# Entorno y archivos locales
+# Material docente privado y entornos locales
+/profesor/
+/professor/
 .venv/
+.editorial/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .DS_Store
-.idea/
-.vscode/
+resultado_local.txt
+calculos_local.py
+# Herramientas de preparación locales: no forman parte de la entrega
+/.githooks/
+/.github/
+/.claude/
+/.worktreelink
+/AGENTS.md
+/CLAUDE.md
+/context/
+/pyproject.toml
+/uv.lock
