@@ -10,7 +10,7 @@ This repository provides Fundamentos de Python classes and practice notebooks fo
 - **Teacher edition:** private solutions, narration and preparation.
 - Programming syntax and semantics are subject matter; visual models must reflect actual discrete execution.
 
-## Project map
+## Repository map
 
 - [practicas](practicas/): student `clases_sincronas/` and `tareas/`.
 - [profesor](profesor/): private class and exercise editions.
@@ -27,6 +27,8 @@ This repository provides Fundamentos de Python classes and practice notebooks fo
 - Students: users of the teaching materials.
 
 ## Methodologies and references
+
+For code issues, use [coding-contract-guidelines](/Users/alejandroprendes/.codex/skills/coding-contract-guidelines/SKILL.md): `context/issues/<issue>/` holds the Local Contract and issue validation scripts with stable cells. Global functional scenarios live in `context/tests/`. Document and teaching-material issues keep their documentary specifications; they do not acquire fictional application tests. Record implementation needs in pending plan points and preserve completed evidence.
 
 [`development-methodology`](/Users/alejandroprendes/.codex/skills/development-methodology/SKILL.md).
 Use the local [sync_lesson_generator](profesor/resources/skills/sync_lesson_generator/SKILL.md) for the teaching format and class construction.
